@@ -1,0 +1,40 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    command: ./start.sh
+    environment:
+      RACK_ENV: production
+      REDIS_HOST: redis
+    depends_on:
+      - postgres
+      - redis
+
+  sidekiq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      REDIS_HOST: redis
+      RACK_ENV: production
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    depends_on:
+      - postgres
+      - redis
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: sequra_prod
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"

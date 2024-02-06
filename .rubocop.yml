@@ -1,0 +1,30 @@
+require:
+  - rubocop-factory_bot
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Excludes:
+    - db/schema.rb
+
+Style/Documentation:
+  Enabled: false
+Lint/MissingSuper:
+  Enabled: false
+RSpec/Rails/InferredSpecType:
+  Enabled: false
+RSpec/MultipleExpectations:
+  Max: 3
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Enabled: false
+RSpec/SpecFilePathFormat:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 8
+RSpec/MessageSpies:
+  EnforcedStyle: receive
+RSpec/MultipleMemoizedHelpers:
+  Max: 8

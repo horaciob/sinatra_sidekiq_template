@@ -1,0 +1,51 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+
+
+
+      // Run all tests in a file using Rspec
+      {
+        "type": "rdbg",
+        "name": "RSpec current line with rdbg",
+        "useBundler": true,
+        "command": "rspec",
+        "request": "launch",
+        "script": "${file}",
+        "rdbgPath": "bundle exec rdbg",
+        "args": [
+            "${file}:${lineNumber}"
+        ],
+    },
+      {
+        "type": "rdbg",
+        "name": "Attach with rdbg",
+        "request": "attach"
+      }
+    ]
+  }
+
+
+
+//   {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "type": "rdbg",
+//             "name": "Debug current file with rdbg",
+//             "request": "launch",
+//             "script": "${file}",
+//             "args": [],
+//             "askParameters": true
+//         },
+//         {
+//             "type": "rdbg",
+//             "name": "Attach with rdbg",
+//             "request": "attach"
+//         }
+//     ]
+// }

@@ -1,0 +1,14 @@
+:concurrency: 10
+development:
+  :concurrency: 10
+production:
+  :concurrency: 10
+:queues:
+  - [disbursement_processor, 2]
+  - merchant_importer
+  - calculate_old_disbursements
+  - merchant_daily_processor
+  - order_importer
+  - default
+:require:
+  ./app.rb

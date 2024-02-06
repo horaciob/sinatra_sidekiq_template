@@ -1,0 +1,9 @@
+hello_worker:
+  cron: "0 1 * * *"
+  class: "MerchantDailyProcessorJob"
+  queue: default
+
+old_disbursements:
+  cron: "0 3 * * *"
+  class: "CalculateOldDisbursementsJob"
+  queue: default

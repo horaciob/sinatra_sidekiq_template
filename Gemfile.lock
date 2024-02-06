@@ -1,0 +1,251 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (7.1.3)
+      activesupport (= 7.1.3)
+    activerecord (7.1.3)
+      activemodel (= 7.1.3)
+      activesupport (= 7.1.3)
+      timeout (>= 0.4.0)
+    activesupport (7.1.3)
+      base64
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
+    ast (2.4.2)
+    base64 (0.2.0)
+    bigdecimal (3.1.6)
+    cgi (0.4.1)
+    concurrent-ruby (1.2.3)
+    connection_pool (2.4.1)
+    database_cleaner-active_record (2.1.0)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
+    debug (1.9.1)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+    diff-lcs (1.5.1)
+    docile (1.4.0)
+    dotenv (2.8.1)
+    drb (2.2.0)
+      ruby2_keywords
+    erb (4.0.4)
+      cgi (>= 0.3.3)
+    et-orbi (1.2.7)
+      tzinfo
+    eu_central_bank (1.7.0)
+      money (~> 6.13, >= 6.13.6)
+      nokogiri (~> 1.9)
+    factory_bot (6.4.6)
+      activesupport (>= 5.0.0)
+    faker (3.2.3)
+      i18n (>= 1.8.11, < 2)
+    fugit (1.9.0)
+      et-orbi (~> 1, >= 1.2.7)
+      raabro (~> 1.4)
+    globalid (1.2.1)
+      activesupport (>= 6.1)
+    i18n (1.14.1)
+      concurrent-ruby (~> 1.0)
+    io-console (0.7.2)
+    irb (1.11.1)
+      rdoc
+      reline (>= 0.4.2)
+    json (2.7.1)
+    language_server-protocol (3.17.0.3)
+    minitest (5.22.0)
+    monetize (1.13.0)
+      money (~> 6.12)
+    money (6.16.0)
+      i18n (>= 0.6.4, <= 2)
+    multi_json (1.15.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    mutex_m (0.2.0)
+    nio4r (2.7.0)
+    nokogiri (1.16.2-x86_64-darwin)
+      racc (~> 1.4)
+    parallel (1.24.0)
+    parser (3.3.0.5)
+      ast (~> 2.4.1)
+      racc
+    pg (1.5.4)
+    prism (0.19.0)
+    psych (5.1.2)
+      stringio
+    puma (6.4.2)
+      nio4r (~> 2.0)
+    raabro (1.4.0)
+    racc (1.7.3)
+    rack (3.0.9)
+    rack-contrib (2.4.0)
+      rack (< 4)
+    rack-protection (4.0.0)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
+    rack-test (2.1.0)
+      rack (>= 1.3)
+    rainbow (3.1.1)
+    rake (13.1.0)
+    rdoc (6.6.2)
+      psych (>= 4.0.0)
+    redis (5.0.8)
+      redis-client (>= 0.17.0)
+    redis-client (0.19.1)
+      connection_pool
+    regexp_parser (2.9.0)
+    reline (0.4.2)
+      io-console (~> 0.5)
+    rexml (3.2.6)
+    rspec (3.13.0)
+      rspec-core (~> 3.13.0)
+      rspec-expectations (~> 3.13.0)
+      rspec-mocks (~> 3.13.0)
+    rspec-core (3.13.0)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-sidekiq (4.1.0)
+      rspec-core (~> 3.0)
+      rspec-expectations (~> 3.0)
+      rspec-mocks (~> 3.0)
+      sidekiq (>= 5, < 8)
+    rspec-support (3.13.0)
+    rubocop (1.60.2)
+      json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.30.0, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.30.0)
+      parser (>= 3.2.1.0)
+    rubocop-capybara (2.20.0)
+      rubocop (~> 1.41)
+    rubocop-factory_bot (2.25.1)
+      rubocop (~> 1.41)
+    rubocop-rake (0.6.0)
+      rubocop (~> 1.0)
+    rubocop-rspec (2.26.1)
+      rubocop (~> 1.40)
+      rubocop-capybara (~> 2.17)
+      rubocop-factory_bot (~> 2.22)
+    ruby-lsp (0.13.4)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.19.0, < 0.20)
+      sorbet-runtime (>= 0.5.10782)
+    ruby-lsp-rspec (0.1.9)
+      ruby-lsp (~> 0.13.0)
+    ruby-progressbar (1.13.0)
+    ruby2_keywords (0.0.5)
+    shoulda (4.0.0)
+      shoulda-context (~> 2.0)
+      shoulda-matchers (~> 4.0)
+    shoulda-context (2.0.0)
+    shoulda-matchers (4.5.1)
+      activesupport (>= 4.2.0)
+    sidekiq (7.2.1)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.19.0)
+    sidekiq-cron (1.12.0)
+      fugit (~> 1.8)
+      globalid (>= 1.0.1)
+      sidekiq (>= 6)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
+    sinatra (4.0.0)
+      mustermann (~> 3.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.27)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
+    sinatra-contrib (4.0.0)
+      multi_json (>= 0.0.2)
+      mustermann (~> 3.0)
+      rack-protection (= 4.0.0)
+      sinatra (= 4.0.0)
+      tilt (~> 2.0)
+    sorbet-runtime (0.5.11230)
+    sqlite3 (1.7.2-x86_64-darwin)
+    stringio (3.1.0)
+    tilt (2.3.0)
+    timeout (0.4.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    unicode-display_width (2.5.0)
+    zeitwerk (2.6.13)
+
+PLATFORMS
+  x86_64-darwin-22
+  x86_64-darwin-23
+
+DEPENDENCIES
+  activerecord
+  annotate
+  connection_pool
+  database_cleaner-active_record
+  debug (>= 1.0.0)
+  dotenv
+  erb
+  eu_central_bank
+  factory_bot
+  faker
+  monetize
+  money
+  pg
+  puma
+  rack-contrib
+  rack-test
+  rake
+  redis
+  rspec
+  rspec-sidekiq
+  rubocop
+  rubocop-factory_bot
+  rubocop-rake
+  rubocop-rspec
+  ruby-lsp
+  ruby-lsp-rspec
+  shoulda
+  sidekiq
+  sidekiq-cron
+  simplecov
+  sinatra
+  sinatra-activerecord
+  sinatra-contrib
+  sqlite3
+  zeitwerk
+
+RUBY VERSION
+   ruby 3.3.0p0
+
+BUNDLED WITH
+   2.5.3

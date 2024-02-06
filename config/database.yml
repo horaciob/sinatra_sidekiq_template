@@ -1,0 +1,31 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sequra_dev
+  pool: 15
+  username: postgres
+  password: postgres
+  timeout: 5000
+  host: 0.0.0.0
+  port: 5432
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sequra_test
+  pool: 15
+  username: postgres
+  password: postgres
+  timeout: 5000
+  host: 0.0.0.0
+  port: 5432
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: sequra_prod
+  pool: 15
+  username: postgres
+  password: postgres
+  timeout: 5000
+  host: postgres
+  port: 5432
